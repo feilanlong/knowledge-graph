@@ -16,6 +16,7 @@ def srl_AtoA(sent):
         result_A0 = ''
         result_A1 = ''
         for value in values:
+            print(value)
             if value[0] == 'A0':
                 result_A0 = ''.join(seg[value[1]:value[2]+1])
             if value[0] == 'A1':
@@ -26,3 +27,5 @@ def srl_AtoA(sent):
     return results
 if __name__ == "__main__":
     srl_AtoA("赫哲族主要分布于黑龙江、松花江、乌苏里江交汇构成的三江平原和完达山余脉")
+
+

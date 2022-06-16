@@ -2,10 +2,13 @@ import get_data
 import relation
 import pandas as pd
 import create_kg
+# 获取数据路径和数据关键词
 data_path,key_word=get_data.save_data()
+# 读取数据
 with open(data_path,'r',encoding="utf-8") as f:
     data = f.read().split("。")
 # print(data)
+# 用于创建二维表
 kg_dic = {
     "郝哲族":[],
     "描述":[],
@@ -19,6 +22,7 @@ for i in data:
         print(e)
     if ret:
         l = len(ret)
+        # 逐个数据项添加
         for j in range(l):
             kg_dic["郝哲族"].append(ret[j][0])
             kg_dic["描述"].append(ret[j][1])

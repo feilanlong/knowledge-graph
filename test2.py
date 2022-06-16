@@ -28,3 +28,4 @@ df = pd.DataFrame(kg_dic)
 print(df)
 df.to_excel(data_path[:-4]+".xlsx")
 create_kg.create_kg(df)
+
