@@ -14,6 +14,7 @@ def create_kg(frame):
         haozhe_nation = str(haozhe_nation)
         describe = str(describe)
         haozhe_re = str(haozhe_re)
+        # 创建节点
         haozhe_nation_node = Node('郝哲族', name=haozhe_nation)
         graph.merge(haozhe_nation_node,'郝哲族','name')  ## merge方法是将重复数据去除掉，只留第一个
         describe_node = Node('描述', name=describe)
